@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>SaaSFlow | ড্যাশবোর্ড</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+
+    <section class="py-24" id="demo">
+        <div class="max-w-7xl mx-auto px-6">
+            <div id="demo-card" class="bg-gray-900 rounded-[2rem] p-8 shadow-2xl relative transition-all">
+                <button onclick="toggleDarkMode()" id="theme-toggle-btn" class="absolute top-6 right-8 bg-gray-700 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-600">☀️ Light</button>
+
+                <div class="flex gap-4 mb-8 pb-6 border-b border-gray-700">
+                    <button onclick="changeDemo('analytics')" id="btn-analytics" class="demo-btn px-6 py-2 rounded-full bg-blue-600 text-white">📊 অ্যানালিটিক্স</button>
+                    <button onclick="changeDemo('tasks')" id="btn-tasks" class="demo-btn px-6 py-2 rounded-full text-gray-400">✅ টাস্ক</button>
+                    <button onclick="changeDemo('team')" id="btn-team" class="demo-btn px-6 py-2 rounded-full text-gray-400">👥 টিম</button>
+                    <button onclick="changeDemo('inventory')" id="btn-inventory" class="demo-btn px-6 py-2 rounded-full text-gray-400">📦 ইনভেন্টরি</button>
+                </div>
+
+                <div id="demo-content" class="min-h-[400px]"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="demo.js"></script>
+</body>
+</html>
